@@ -3,3 +3,26 @@
 .component {
   padding: $base-size;
 }
+
+.positioning {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.links {
+  width: 100%;
+  margin: 2px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.date {
+  margin: 2rem 0 2rem 80%;
+}
