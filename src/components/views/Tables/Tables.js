@@ -100,7 +100,7 @@ const renderActions = status => {
             <CloseIcon fontSize="large" />
           </div>
           <div className={`${styles.positioning} + ${styles.links}`}>
-            <Button component={Link} variant="contained" color="primary" to={`${process.env.PUBLIC_URL}/tables/booking/123abc`}>
+            <Button component={Link} variant="contained" color="primary" to={`${process.env.PUBLIC_URL}/tables/booking`}>
               Booked
             </Button>
           </div>
@@ -113,7 +113,7 @@ const renderActions = status => {
             <EventIcon fontSize="large" />
           </div>
           <div className={`${styles.positioning} + ${styles.links}`}>
-            <Button component={Link} variant="contained" color="primary" to={`${process.env.PUBLIC_URL}/tables/events/123abc`}>
+            <Button component={Link} variant="contained" color="primary" to={`${process.env.PUBLIC_URL}/tables/events/:id`}>
               Event
             </Button>
           </div>

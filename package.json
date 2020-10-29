@@ -2,7 +2,7 @@
   "name": "module-21-pizzeria-portal",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/panel/",
+  "homepage": "/",
   "scripts": {
     "start": "run-p start:* ",
     "start-silent": "run-p start > /dev/null",
