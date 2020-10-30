@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useCallback} from 'react';
 import styles from './Kitchen.module.scss';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -8,6 +8,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
+import SwitchChanger from '../../features/Switch/Switch';
 
 const kitchenContent = [
   {id: '1', order: ['hamburger extra'], status: 'done'},
@@ -16,13 +17,6 @@ const kitchenContent = [
 ];
 
 const Kitchen = () => {
-
-  const [preparationStatus, setPreparationStatus] = React.useState(false);
-
-  const handleChange = (e) => {
-    setPreparationStatus(e.checked = !preparationStatus);
-    console.log();
-  };
   return (
     <Paper className={styles.component}>
       <Table>
@@ -47,16 +41,7 @@ const Kitchen = () => {
                 {row.status}
               </TableCell>
               <TableCell>
-                <FormControlLabel
-                  control={
-                    <Switch
-                      checked={preparationStatus}
-                      onChange={(e)=>handleChange(e.target)}
-                      name='prepared'
-                    />
-                  }
-                  label="Prepared"
-                />
+                <SwitchChanger />
               </TableCell>
             </TableRow>
           ))}

@@ -81,13 +81,17 @@ const renderActions = status => {
               component={Link}
               variant="contained"
               color="secondary"
-              to={`${process.env.PUBLIC_URL}/tables/booking/new`}
+              exath to={`${process.env.PUBLIC_URL}/tables/booking/new`}
             >
               New Booking
             </Button>
           </div>
           <div className={`${styles.positioning} + ${styles.links}`}>
-            <Button component={Link} variant="contained" color="secondary" to={`${process.env.PUBLIC_URL}/tables/events/new`}>
+            <Button
+              component={Link}
+              variant="contained"
+              color="secondary"
+              exath to={`${process.env.PUBLIC_URL}/tables/events/new`}>
               New Event
             </Button>
           </div>
@@ -100,20 +104,29 @@ const renderActions = status => {
             <CloseIcon fontSize="large" />
           </div>
           <div className={`${styles.positioning} + ${styles.links}`}>
-            <Button component={Link} variant="contained" color="primary" to={`${process.env.PUBLIC_URL}/tables/booking`}>
+            <Button
+              component={Link}
+              variant="contained"
+              color="primary"
+              exath to={`${process.env.PUBLIC_URL}/tables/booking/idBooking`}>
               Booked
             </Button>
           </div>
         </div>
       );
     case 'event':
+
       return (
         <div className={styles.positioning}>
           <div>
             <EventIcon fontSize="large" />
           </div>
           <div className={`${styles.positioning} + ${styles.links}`}>
-            <Button component={Link} variant="contained" color="primary" to={`${process.env.PUBLIC_URL}/tables/events/:id`}>
+            <Button
+              component={Link}
+              variant="contained"
+              color="primary"
+              exath to={`${process.env.PUBLIC_URL}/tables/events/idEvent`}>
               Event
             </Button>
           </div>
