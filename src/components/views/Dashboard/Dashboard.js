@@ -1,6 +1,6 @@
 import React from 'react';
 import Kitchen from '../Kitchen/Kitchen';
-import Waiter from '../Waiter/Waiter';
+import Waiter from '../Waiter/WaiterContainer';
 import styles from './Dashboard.module.scss';
 
 const Dashboard = () => {
