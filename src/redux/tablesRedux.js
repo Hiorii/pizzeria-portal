@@ -37,11 +37,11 @@ export const fetchFromAPI = () => {
   };
 };
 
-export const fetchStatusUpdate = (status) => {
+export const fetchStatusUpdate = (id, status) => {
   return (dispatch) => {
 
     Axios
-      .put(`${api.url}/api/${api.tables}/${status.id}`, status)
+      .put(`${api.url}/api/${api.tables}/${id}`, {status: status})
       .then(res => {
         dispatch(statusUpdate(res.data));
       });
